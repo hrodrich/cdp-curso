@@ -36,6 +36,7 @@ $("#dar_click_usuarios").click(function () {
         type: "get",
         dataType: "json",
         success: function(respuesta_servidor){
+            $("ul").empty();
             console.log(respuesta_servidor);
             $.each(respuesta_servidor, function(numero_usuario, usuario){
                 console.log(usuario)
